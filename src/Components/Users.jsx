@@ -29,7 +29,7 @@ const Users = () => {
           Get List
         </button>
       </div>
-      <div style={{ display: "flex", flexWrap: "wrap",gap:'10px'}}>
+      <div style={{ display: "flex", flexWrap: "wrap",gap:'30px'}}>
         {usetList && usetList.map((user) => (
           <UserCard user={user} />
         ))}

@@ -4,14 +4,14 @@ const UserCard = (props) => {
     <div
       style={{
         width: "30%",
-        border: "1px solid black",
         borderRadius: "10px",
-        alignItems: "center",
-        justifyContent: "center",
+        textAlign:'center',
+        backgroundColor:'lightgray',
+        padding:'5px'
       }}
     >
       <div>
-        <img src={avatar} />
+        <img src={avatar}  style={{borderRadius:'15px'}}/>
       </div>
       <div>{first_name + " " + last_name}</div>
       <div>{email}</div>
