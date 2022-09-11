@@ -5,13 +5,13 @@ const UserCard = (props) => {
       style={{
         width: "30%",
         borderRadius: "10px",
-        textAlign:'center',
-        backgroundColor:'lightblue',
-        padding:'5px'
+        textAlign: "center",
+        backgroundColor: "lightgoldenrodyellow",
+        padding: "5px",
       }}
     >
       <div>
-        <img src={avatar}  style={{borderRadius:'15px'}}/>
+        <img src={avatar} style={{ borderRadius: "15px" }} />
       </div>
       <div>{first_name + " " + last_name}</div>
       <div>{email}</div>
