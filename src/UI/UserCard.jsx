@@ -6,7 +6,7 @@ const UserCard = (props) => {
         width: "30%",
         borderRadius: "10px",
         textAlign:'center',
-        backgroundColor:'lightgray',
+        backgroundColor:'lightblue',
         padding:'5px'
       }}
     >
