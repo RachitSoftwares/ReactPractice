@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getUserListRequest } from "../store/slice/user";
+import UserCard from "../UI/UserCard";
 
 const Users = () => {
   const dispatch = useDispatch();
   const usetList = useSelector((state) => state.user.users.data);
   useEffect(() => {
-    // dispatch(getUserListRequest());
+    dispatch(getUserListRequest());
   }, []);
 
   return (
@@ -28,15 +29,11 @@ const Users = () => {
           Get List
         </button>
       </div>
-      <table>
-        {usetList &&
-          usetList.length > 0 &&
-          usetList.slice(0, 15).map((item) => (
-            <tr key={item.id}>
-              <td>{item.id}</td>
-            </tr>
-          ))}
-      </table>
+      <div style={{ display: "flex", flexWrap: "wrap",gap:'10px'}}>
+        {usetList && usetList.map((user) => (
+          <UserCard user={user} />
+        ))}
+      </div>
     </div>
   );
 };
