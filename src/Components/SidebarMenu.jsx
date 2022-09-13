@@ -22,6 +22,13 @@ const SidebarMenu = () => {
               <li className="nav-item">
                 <NavLink to="/users"> Users</NavLink>
               </li>
+              <li className=" nav-item">
+                <NavLink to="/colorChange">Change Color</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/table-opr">Table Oprerations </NavLink>
+
+              </li>
             </ul>
             <hr />
             <div className="dropdown pb-4">
